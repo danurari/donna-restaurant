@@ -1054,3 +1054,60 @@ body.nav-active {
 .service .card-title {
     margin-block-end: 12px;
 }
+
+/*-----------------------------------*\
+  #ABOUT KIMBRO
+\*-----------------------------------*/
+.about .section-text { margin-block: 15px 30px; }
+
+.about .btn {
+  margin-inline: auto;
+  margin-block-start: 26px;
+}
+
+.about .container {
+  display: grid;
+  gap: 120px;
+}
+
+.about-banner {
+  position: relative;
+  margin-block-end: 120px;
+}
+
+.about-banner > .w-100 { padding-inline-start: 50px; }
+
+.about .abs-img { position: absolute; }
+
+.about .abs-img::before { z-index: -1; }
+
+.about .abs-img-1 {
+  bottom: -120px;
+  left: 0;
+  width: 150px;
+  padding-block: 50px;
+}
+
+.about .abs-img-2 {
+  top: -65px;
+  right: 0;
+  overflow: hidden;
+}
+
+.about .abs-img-1::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  background-image: url('../images/img-pattern.svg');
+  background-repeat: repeat;
+}
+
+.about .abs-img-2::before {
+  inset: 0;
+  background-image: url('../images/badge-2-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: rotate360 15s linear infinite;
+}
