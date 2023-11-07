@@ -449,8 +449,7 @@ body.nav-active {
     transition: var(--transition-1);
 }
 
-.btn-text:is(:hover,
- :focus-visible) {
+.btn-text:is(:hover,:focus-visible) {
     color: var(--white);
 }
 
@@ -535,7 +534,7 @@ body.nav-active {
 
 
 /*-----------------------------------*\
-  #PRELOAD
+                #PRELOAD
 \*-----------------------------------*/
 
 .preload {
@@ -611,7 +610,7 @@ body.nav-active {
 
 
 /*-----------------------------------*\
-  #TOPBAR
+                #TOPBAR
 \*-----------------------------------*/
 
 .topbar {
@@ -620,7 +619,7 @@ body.nav-active {
 
 
 /*-----------------------------------*\
-  #HEADER
+                #HEADER
 \*-----------------------------------*/
 
 .header .btn {
@@ -723,8 +722,7 @@ body.nav-active {
     --ionicon-stroke-width: 40px;
 }
 
-.navbar .close-btn:is(:hover,
- :focus-visible) {
+.navbar .close-btn:is(:hover,:focus-visible) {
     color: var(--gold-crayola);
 }
 
@@ -759,9 +757,7 @@ body.nav-active {
     transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover,
- :focus-visible,
-.active) .span {
+.navbar-link:is(:hover,:focus-visible, .active) .span {
     color: var(--gold-crayola);
     transform: translateX(20px);
 }
@@ -775,9 +771,7 @@ body.nav-active {
     transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover,
- :focus-visible,
-.active) .separator {
+.navbar-link:is(:hover,:focus-visible, .active) .separator {
     opacity: 1;
 }
 
@@ -797,8 +791,7 @@ body.nav-active {
     transition: var(--transition-1);
 }
 
-.sidebar-link:is(:hover,
- :focus-visible) {
+.sidebar-link:is(:hover,:focus-visible) {
     color: var(--gold-crayola);
 }
 
@@ -835,7 +828,7 @@ body.nav-active {
 
 
 /*-----------------------------------*\
-  #HERO
+                #HERO
 \*-----------------------------------*/
 
 .hero .slider-btn {
@@ -977,7 +970,7 @@ body.nav-active {
 
 
 /*-----------------------------------*\
-  #SERVICE
+                #SERVICE
 \*-----------------------------------*/
 
 .service .section-title {
@@ -1014,8 +1007,7 @@ body.nav-active {
     will-change: transform;
 }
 
-.service-card:is(:hover,
- :focus-within) .has-before::before {
+.service-card:is(:hover,:focus-within) .has-before::before {
     transform: rotateY(0.5turn) translateX(50%);
     transition-delay: 300ms;
 }
@@ -1024,8 +1016,7 @@ body.nav-active {
     transition: var(--transition-2);
 }
 
-.service-card:is(:hover,
- :focus-within) .card-banner {
+.service-card:is(:hover,:focus-within) .card-banner {
     transform: scale(1.05);
 }
 
@@ -1034,23 +1025,23 @@ body.nav-active {
 }
 
 /*-----------------------------------*\
-  #ABOUT KIMBRO
+                #ABOUT 
 \*-----------------------------------*/
 .about .section-text { margin-block: 15px 30px; }
 
 .about .btn {
-  margin-inline: auto;
-  margin-block-start: 26px;
+    margin-inline: auto;
+    margin-block-start: 26px;
 }
 
 .about .container {
-  display: grid;
-  gap: 120px;
+    display: grid;
+    gap: 120px;
 }
 
 .about-banner {
-  position: relative;
-  margin-block-end: 120px;
+    position: relative;
+    margin-block-end: 120px;
 }
 
 .about-banner > .w-100 { padding-inline-start: 50px; }
@@ -1060,32 +1051,32 @@ body.nav-active {
 .about .abs-img::before { z-index: -1; }
 
 .about .abs-img-1 {
-  bottom: -120px;
-  left: 0;
-  width: 150px;
-  padding-block: 50px;
+    bottom: -120px;
+    left: 0;
+    width: 150px;
+    padding-block: 50px;
 }
 
 .about .abs-img-2 {
-  top: -65px;
-  right: 0;
-  overflow: hidden;
+    top: -65px;
+    right: 0;
+    overflow: hidden;
 }
 
 .about .abs-img-1::before {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  background-image: url('../images/img-pattern.svg');
-  background-repeat: repeat;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    background-image: url('../images/img-pattern.svg');
+    background-repeat: repeat;
 }
 
 .about .abs-img-2::before {
-  inset: 0;
-  background-image: url('../images/badge-2-bg.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: rotate360 15s linear infinite;
+    inset: 0;
+    background-image: url('../images/badge-2-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotate360 15s linear infinite;
 }
