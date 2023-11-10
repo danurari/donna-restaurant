@@ -1199,3 +1199,195 @@ body.nav-active {
     bottom: 0;
     right: 0;
 }
+
+/*-----------------------------------*\
+            #Testimonials
+\*-----------------------------------*/
+
+.testi {
+    padding-block-end: 340px;
+    position: static;
+}
+
+.testi .quote {
+    font-size: 7rem;
+    font-family: var(--fontFamily-forum);
+    line-height: 0.7rem;
+}
+
+.testi .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-block: 40px 50px;
+}
+
+.testi .separator {animation: rotate360 15s linear infinite; }
+
+.profile .img{
+    margin-inline: auto;
+    border-radius: var(--radius-circle);
+    margin-block-end: 15px;
+}
+.testi .profile-name {
+    color: var(--gold-crayola);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-3);
+}
+
+/*-----------------------------------*\
+            #REVERSTATION
+\*-----------------------------------*/
+.reverstation-form{
+    margin-block-start: -270px;
+}
+
+.form-text{
+    margin-block-end: 40px;
+}
+
+.form-text .link{
+    display: inline;
+    color: var(--gold-crayola);
+}
+
+.form-right .headline-1{
+    margin-block-end: 40px;
+}
+
+.form-right .contact-label {
+    margin-block-end: 5px;
+}
+
+.form-right .separator {
+    margin: 20px auto;
+}
+
+.form-right .body-4 {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-3);
+}
+
+.form-right .body-4:not(:last-child) {
+    margin-block-end: 25px;
+}
+
+.form-left,
+.form-right {
+    padding: 40px 20px 30px;
+}
+
+.input-field[type="date"]{
+    text-transform: uppercase;
+    padding-inline-end: 10px;
+}
+
+.input-field[type="date"]::-webkit-calendar-picker-indicator {opacity: 0;}
+
+textarea.input-field{
+    resize: none;
+    height: 140px;
+    padding-block: 20px;
+    line-height: var(--lineHeight-1)
+}
+
+.form-left .btn{
+    max-width: 100%;
+    width: 100%;
+}
+
+.form-right {
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+/*-----------------------------------*\
+            #FEATURES
+\*-----------------------------------*/
+.features .section-title {
+    margin-block-end: 40px;
+}
+
+.feature-card{
+    padding: 30px 20px 40px;
+}
+
+.feature-item:nth-child(2n+1) .feature-card {
+    background-color: var(--eerie-black-3);
+}
+
+.feature-item:nth-child(2n) .feature-card {
+    background-color: var(--smoky-black-3);
+}
+
+.feature-card .card-icon{
+    max-width: max-content;
+    margin-inline: auto;
+    transition: var(--transition-2);
+}
+
+.feature-card:hover .card-icon {
+    transform: scale(-1) rotate(180deg);
+}
+
+.feature-card .card-title {
+    margin-block: 20px;
+}
+
+.feature-card .card-text {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-6);
+}
+
+/*-----------------------------------*\
+  #EVENT
+\*-----------------------------------*/
+
+.event .section-title{
+    margin-block-end: 40px;
+}
+
+.event-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card .card-content{
+    background-image: var(--gradient-1);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 35px 35px 25px;
+}
+
+.event-card .publish-date{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    padding: 5px 10px;
+    color: var(--gold-crayola);
+    background-color: var(--black);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letterSpacing-1);
+    line-height: 14px;
+}
+
+.event-card .card-subtitle{
+    color: var(--gold-crayola);
+    text-transform: uppercase;
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letterSpacing-2);
+    margin-block-end: 5px;
+}
+
+.event-card .card-banner .img-cover{
+    transition: var(--transition-2);
+}
+
+.event-card:is(:hover :focus-within) .img-cover { transform: scaleY(1.05);}
+
+.event .btn{
+    margin-inline: auto;
+    margin-block-start: 40px;
+}
