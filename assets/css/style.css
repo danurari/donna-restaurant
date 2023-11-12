@@ -1522,30 +1522,11 @@ textarea.input-field{
 /*-----------------------------------*\
                 #MEDIA QUERIES
 \*-----------------------------------*/
-
-/*
-* responsive for larger than 575px screen
-*/
-
 @media (min-width: 575px){
 
-    /**
-    * CUSTOM PROPERTY
-    */
-
     :root {
-
-        /**
-        * typograpy
-        */
-
         --fontSize-body-2: 2rem;
-
     }
-
-    /**
-    * REUSED STYLE
-    */
 
     :is(.service, .about) .section-text {
         max-width: 420px;
@@ -1600,7 +1581,7 @@ textarea.input-field{
     * HEADER
     */
 
-    .header { top: 51px; }
+    .header { top: 30px; }
 
     .header.active { top: 0; }
 
@@ -1699,14 +1680,8 @@ textarea.input-field{
 
 }
 
-/*
-* responsive for larger than 768px screen
-*/
-@media (min-width: 768px) {
 
-    /**
-     * REUSED STYLE
-     */
+@media (min-width: 768px) {
 
     .grid-list { grid-template-columns: 1fr 1fr; }
 
@@ -1717,8 +1692,6 @@ textarea.input-field{
         width: calc(50% - 20px);
         margin-inline: auto;
     }
-
-
 
     /**
      * HEADER
@@ -1778,29 +1751,12 @@ textarea.input-field{
 
 }
 
-/*
-* responsive for larger than 992px screen
-*/
 
 @media (min-width: 992px) {
 
-    /**
-     * CUSTOM PROPERTY
-     */
-
     :root {
-
-    /**
-       * spacing
-       */
-
         --section-space: 100px;
-
     }
-
-    /**
-     * REUSED STYLE
-     */
 
     :is(.service, .event) .container { max-width: unset; }
 
@@ -1926,29 +1882,11 @@ textarea.input-field{
 }
 
 
-/*
-* responsive for larger than 1200px screen
-*/
-
 @media (min-width: 1200px) {
 
-    /**
-     * CUSTOM PROPERTY
-     */
-
     :root {
-
-        /**
-       * typography
-       */
-
         --fontSize-title-2: 2.5rem;
-
     }
-
-    /**
-     * REUSED STYLE
-     */
 
     .container,
     :is(.service, .event) .container {
@@ -2074,17 +2012,8 @@ textarea.input-field{
 
 }
 
-/*
-* responsive for larger than 1400px screen
-*/
 
 @media (min-width: 1400px) {
-
-    /**
-    * HEADER
-    */
-
-    .navbar { margin-inline: auto; }
 
     /**
     * ABOUT
